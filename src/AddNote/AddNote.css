@@ -1,0 +1,49 @@
+.addnote {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 250px;
+  background-color: #283238;
+}
+
+.addnote input {
+  height: 40px;
+  margin: 15px;
+  color: white;
+  background-color: #525f64;
+  font-weight: bold;
+  padding-left: 10px;
+  border: none;
+}
+
+.addnote textarea {
+  margin: 0 15px 10px 15px;
+  color: white;
+  background-color: #525f64;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: none;
+  line-height: 1.3;
+}
+
+textarea,
+input:focus {
+  outline: 0;
+  background-color: #74797a;
+}
+
+.addnote > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0 15px;
+  margin-bottom: 10px;
+}
+
+.addnote button {
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: transparent;
+}

@@ -1,0 +1,36 @@
+.note {
+  height: 200px;
+  width: 250px;
+
+  position: relative;
+  background-color: #283238;
+}
+
+.note h2 {
+  margin: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.note p {
+  margin: 10px;
+  color: rgb(202, 202, 202);
+}
+
+.note > div {
+  display: flex;
+  margin: 0 10px;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 10px;
+  width: 230px;
+  align-items: baseline;
+}
+
+.note button {
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: transparent;
+}

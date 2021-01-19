@@ -1,0 +1,14 @@
+.add {
+  height: 200px;
+  width: 250px;
+  background-color: #283238;
+}
+
+.add button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 70px;
+  color: rgb(202, 202, 202);
+}
