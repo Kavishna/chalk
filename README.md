@@ -1,4 +1,4 @@
-#chalk
+# chalk
 
 simple note app
 
