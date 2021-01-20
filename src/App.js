@@ -7,15 +7,9 @@ export class App extends Component {
     notes: [
       {
         id: 1,
-        title: "Mongoose API",
+        title: "Sample Text",
         content:
-          "Mongoose provides a straight-forward, schema-based solution to model your application data.",
-      },
-      {
-        id: 2,
-        title: "The position Property",
-        content:
-          "The position property specifies the type of positioning method used for an element. ",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quasi!",
       },
     ],
     edit: false,

@@ -2,13 +2,15 @@ h1 {
   font-family: "Kranky", cursive;
   margin: 30px;
   text-align: center;
+  font-size: 60px;
+  color: rgb(132, 118, 143);
 }
 
 button:hover {
   outline: 0;
-  color: rgb(99, 105, 107);
+  color: rgb(141, 93, 219);
 }
 
 button:disabled {
-  color: #535353;
+  color: #757575;
 }

@@ -11,9 +11,14 @@ body {
   font-family: "Kalam", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #18232a;
   color: white;
+  background-color: #1f1d2b;
 }
+
+/* .pattern-cross-dots-xl {
+  color: #141414;
+  background-color: #b46d4c;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

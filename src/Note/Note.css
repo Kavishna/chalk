@@ -1,20 +1,25 @@
 .note {
   height: 200px;
   width: 250px;
-
   position: relative;
-  background-color: #283238;
+  background-color: rgb(56, 50, 73);
+  border-radius: 10px;
 }
 
 .note h2 {
-  margin: 10px;
+  margin: 10px 20px;
   padding-top: 10px;
   font-size: 20px;
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(212, 198, 252);
 }
 
 .note p {
-  margin: 10px;
-  color: rgb(202, 202, 202);
+  margin: 10px 20px;
+  color: rgb(175, 163, 185);
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
 }
 
 .note > div {

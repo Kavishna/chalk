@@ -1,7 +1,9 @@
 .add {
   height: 200px;
   width: 250px;
-  background-color: #283238;
+  background-color: rgb(56, 50, 73);
+
+  border-radius: 10px;
 }
 
 .add button {
@@ -10,5 +12,5 @@
   border: none;
   background-color: transparent;
   font-size: 70px;
-  color: rgb(202, 202, 202);
+  color: rgb(255, 255, 255);
 }

@@ -3,27 +3,35 @@
   flex-direction: column;
   height: 200px;
   width: 250px;
-  background-color: #283238;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(53, 53, 53, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
 }
 
 .edit input {
   height: 40px;
   margin: 15px;
-  color: white;
-  background-color: #525f64;
   font-weight: bold;
   padding-left: 10px;
   border: none;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
 }
 
 .edit textarea {
   margin: 0 15px 10px 15px;
-  color: white;
-  background-color: #525f64;
   padding-left: 10px;
   padding-top: 10px;
   border: none;
   line-height: 1.3;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
 }
 
 .edit > div {
