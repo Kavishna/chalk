@@ -34,20 +34,17 @@ export class App extends Component {
     this.setState({ add: !this.state.add });
   };
 
-  updateTitleHandler = (index, data) => {
-    const notes = [...this.state.notes];
-    notes[index] = { title: data, content: this.state.notes[index].content };
-    this.setState({ notes: notes });
-  };
-
-  updateContentHandler = (index, data) => {
-    const notes = [...this.state.notes];
-    notes[index] = { title: this.state.notes[index].title, content: data };
-    this.setState({ notes: notes });
-  };
-
   editNoteHandler = (index) => {
     this.setState({ edit: !this.state.edit, index: index });
+  };
+
+  editNote = (index) => {
+    const title = document.getElementById("notetitle").value;
+    const content = document.getElementById("notecontent").value;
+
+    const notes = [...this.state.notes];
+    notes[index] = { title: title, content: content };
+    this.setState({ notes: notes, edit: !this.state.edit });
   };
 
   deleteNoteHandler = (index) => {
@@ -62,17 +59,15 @@ export class App extends Component {
         <h1>CHALK</h1>
         <div>
           <NoteList
-            edit={this.state.edit}
             notes={this.state.notes}
-            delete={this.deleteNoteHandler}
-            editnote={this.editNoteHandler}
-            updatecontent={this.updateContentHandler}
-            updatetitle={this.updateTitleHandler}
             noteindex={this.state.index}
-            addnote={this.addNoteHandler}
-            addnewnote={this.addNote}
+            edit={this.state.edit}
+            editnote={this.editNoteHandler}
+            processedit={this.editNote}
             add={this.state.add}
-            updatetemptitle={this.updateTempTitle}
+            addnote={this.addNoteHandler}
+            processadd={this.addNote}
+            delete={this.deleteNoteHandler}
           />
         </div>
       </div>

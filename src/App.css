@@ -4,9 +4,9 @@ h1 {
   text-align: center;
 }
 
-button:focus {
+button:hover {
   outline: 0;
-  color: rgb(167, 167, 167);
+  color: rgb(99, 105, 107);
 }
 
 button:disabled {

@@ -6,18 +6,18 @@ import Add from "../Add/Add";
 function NoteList(props) {
   const notes = props.notes.map((note, index) => (
     <Note
-      delete={() => props.delete(index)}
       key={index}
+      id={index}
+      notes={props.notes}
+      noteindex={props.noteindex}
       title={note.title}
       content={note.content}
-      editnote={() => props.editnote(index)}
       edit={props.edit}
-      updatecontent={props.updatecontent}
-      updatetitle={props.updatetitle}
-      notes={props.notes}
-      id={index}
-      noteindex={props.noteindex}
+      editnote={() => props.editnote(index)}
+      processedit={props.processedit}
+      add={props.add}
       addnote={props.addnote}
+      delete={() => props.delete(index)}
     />
   ));
 
@@ -25,9 +25,9 @@ function NoteList(props) {
     <div className="notelist">
       {notes}
       <Add
-        addnote={props.addnote}
         add={props.add}
-        addnewnote={props.addnewnote}
+        addnote={props.addnote}
+        processadd={props.processadd}
         edit={props.edit}
       />
     </div>

@@ -5,23 +5,20 @@ import "./Note.css";
 function Note(props) {
   return props.edit && props.noteindex === props.id ? (
     <Edit
-      editnote={props.editnote}
       id={props.id}
       notes={props.notes}
-      updatecontent={props.updatecontent}
-      updatetitle={props.updatetitle}
-      title={props.title}
-      content={props.content}
+      editnote={props.editnote}
+      processedit={props.processedit}
     />
   ) : (
     <div className="note">
       <h2>{props.title}</h2>
       <p>{props.content}</p>
       <div>
-        <button onClick={props.delete} disabled={props.edit}>
+        <button onClick={props.delete} disabled={props.edit || props.add}>
           <i class="fas fa-trash"></i>
         </button>
-        <button onClick={props.editnote} disabled={props.edit}>
+        <button onClick={props.editnote} disabled={props.edit || props.add}>
           <i class="fas fa-edit"></i>
         </button>
       </div>

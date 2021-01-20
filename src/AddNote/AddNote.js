@@ -10,7 +10,7 @@ function AddNote(props) {
         <button onClick={props.addnote}>
           <i class="fas fa-times"></i>
         </button>
-        <button onClick={props.addnewnote}>
+        <button onClick={props.processadd}>
           <i class="fas fa-check"></i>
         </button>
       </div>

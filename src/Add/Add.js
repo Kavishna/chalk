@@ -4,7 +4,7 @@ import AddNote from "../AddNote/AddNote";
 
 function Add(props) {
   return props.add ? (
-    <AddNote addnewnote={props.addnewnote} addnote={props.addnote} />
+    <AddNote processadd={props.processadd} addnote={props.addnote} />
   ) : (
     <div className="add">
       <button onClick={props.addnote} disabled={props.edit}>
